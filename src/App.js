@@ -3,6 +3,7 @@ import { Form, Button } from 'react-bootstrap';
 import CarouselComponent from './CarouselComponent';
 import CardComponent from './CardComponent';
 import SlickComponent from './SlickComponent';
+import './App.scss';
 
 export default class App extends React.Component {
   render() {

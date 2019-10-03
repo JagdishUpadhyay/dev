@@ -1,0 +1,32 @@
+$brand-orange: #f05625;
+
+.app-root {
+  font-family: "Lato", sans-serif;
+  .casouselImage {
+    height: 350px;
+    object-fit: cover;
+    width: 100%;
+  }
+  .comp {
+    .card-title {
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $brand-orange;      
+    }
+    .card-image {
+      background-size: cover;
+      background-position: top center;
+      height: 0;
+      padding-top: 56.25%;
+      width: 100%;
+      margin-bottom: 6px;
+    }
+    &.video {
+      video {
+        width: 100%    !important;
+        height: auto   !important;
+      }
+    }
+  }
+}
+

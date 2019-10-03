@@ -1,6 +1,5 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import './App.css';
 import $ from "jquery";
 
 export default class CarouselComponent extends React.Component {
