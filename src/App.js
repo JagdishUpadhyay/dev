@@ -2,7 +2,7 @@ import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 import CarouselComponent from './CarouselComponent';
 import CardComponent from './CardComponent';
-
+import SlickComponent from './SlickComponent';
 
 export default class App extends React.Component {
   render() {
@@ -10,12 +10,13 @@ export default class App extends React.Component {
       <div>
         <CarouselComponent />
         <div className="container-fluid">
-          <div class="row">
+          <div className="row">
             <div className="col-md-1"></div>
-            <div class="col-md-10">
+            <div className="col-md-10">
             <div className="col-md-1"></div>
         <div style={{ marginTop: "35px" }}>
         <CardComponent />
+        <SlickComponent />
         </div>
         </div>
         </div>

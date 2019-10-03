@@ -37,3 +37,26 @@
   object-fit: cover;
   width: 100%;
 }
+
+.slick-next:hover, .slick-prev, .slick-prev:focus, .slick-prev:hover {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+
+.slick-next:before, .slick-prev:before {
+  color: #000 !important;
+}
+
+.slick-next:before, .slick-prev:before {
+  content: "\2192";
+}
+
+.slick-next:before, .slick-prev:before {
+  font-family: slick;
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}

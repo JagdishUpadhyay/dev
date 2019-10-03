@@ -7,8 +7,8 @@ export default class CardComponent extends React.Component {
     render() {
         return (
             <div>
-            <div class="row">
-                <div class="col-md-6">
+            <div className="row">
+                <div className="col-md-6">
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src="/news1.jpg" />
                     <Card.Body>
@@ -20,7 +20,7 @@ export default class CardComponent extends React.Component {
                     </Card.Body>
                 </Card>
                 </div>
-                <div class="col-md-6">
+                <div className="col-md-6">
                 <Card style={{ width: '18rem' }}>
                     <video height="350" controls autoplay>
                         <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" />
@@ -38,7 +38,7 @@ export default class CardComponent extends React.Component {
             </div>
 
             <div className="row">
-            <div class="col-md-3">
+            <div className="col-md-3">
             <Card style={{ width: '18rem' }}>
                 
                     <Card.Body>
@@ -52,7 +52,7 @@ export default class CardComponent extends React.Component {
 </div>
 
 <Card style={{ width: '18rem' }}>
-<div class="col-md-3">
+<div className="col-md-3">
                 <Card.Body>
 
                     <div style={{ margin: '10px' }}>
