@@ -56,7 +56,6 @@ export default class SlickComponent extends Component {
             <div style={{ marginTop: '30px' }}>
                 <Slider {...settings}>
                     {this.links.map((link, index) =>{
-                        debugger;
                     return (<div key={{index}}>
                     <video height="150" controls autoplay>
                         <source src= {link }/>

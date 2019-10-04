@@ -1,16 +1,36 @@
 import React from 'react';
-import { Form, Button } from 'react-bootstrap';
 import CarouselComponent from './CarouselComponent';
 import CardComponent from './CardComponent';
 import SlickComponent from './SlickComponent';
 import './App.scss';
 import NewsComponent from './NewsComponent';
 
+
 export default class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      carouselLinks: null
+    };
+  }
+
+  componentDidMount() {
+    const links = this.getCarouselLinks();
+    this.setState({ carouselLinks: links });
+  }
+
+  getCarouselLinks() {
+    return  [{ type: 'image', src: '/image1.jpg' },
+    { type: 'video', src: 'https://seritiza.com/wp-content/uploads/2017/11/BusinessDay_TV_09_Oct_17_17.10.mp4?_=1' },
+    { type: 'image', src: '/image2.jpg' },
+    { type: 'video', src: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4' }];
+  }
+
   render() {
     return (
       <div>
-        <CarouselComponent />
+        <CarouselComponent links={this.state.carouselLinks}/>
         <div className="news-comps" style={{ backgroundImage: 'url(/seriti-news-1.jpg)' }}>
         <div className="container-fluid">
           <div className="row">
@@ -56,15 +76,9 @@ export default class App extends React.Component {
               Submit
             </Button>
             </div>
-            <div style={{flex:1 }}>
-            <Button variant="secondary">
-              Cancel
-            </Button>
-            </div>
           </div>
-        </Form>
-        </div> */}
         </div>
+      </div>
     );
   }
 }
