@@ -1,4 +1,6 @@
 $brand-orange: #f05625;
+$color-white: #fff;
+$color-orange-dark: #af2a00;
 
 .app-root {
   font-family: "Lato", sans-serif;
@@ -7,7 +9,28 @@ $brand-orange: #f05625;
     object-fit: cover;
     width: 100%;
   }
+  .news-comps {
+    float: left;
+    width: 100%;
+    clear: both;    
+    padding: 100px 0;
+    background-size: cover;
+    position: relative;
+    background-color: $brand-orange;
+    background-blend-mode: multiply;
+    h2 {
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $color-white;
+      font-size: 2.4rem;
+    }
+    .card {
+      border-color: $color-orange-dark;
+      margin: 12px 0;
+    }
+  }
   .comp {
+
     .card-title {
       font-weight: bold;
       text-transform: uppercase;

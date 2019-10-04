@@ -11,13 +11,19 @@ export default class App extends React.Component {
     return (
       <div>
         <CarouselComponent />
+        <div className="news-comps" style={{ backgroundImage: 'url(/seriti-news-1.jpg)' }}>
+        <div className="container-fluid">
+          <div className="row">
+          <div className="col-md-10 offset-md-1">
+        <NewsComponent />
+        </div>
+        </div></div></div>
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-1"></div>
             <div className="col-md-10">
             <div className="col-md-1"></div>
-        <div style={{ marginTop: "35px" }}>
-        <NewsComponent />
+        <div style={{ marginTop: "35px" }}>        
         <CardComponent />
         <SlickComponent />
         </div>

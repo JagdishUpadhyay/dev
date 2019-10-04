@@ -7,14 +7,14 @@ return (
 <div>
     <h2>News</h2>
    <div className="row">
-      <div className="col-md-3">
+      <div className="col-md-4">
          <Card>
             <div className="comp news image text">
-               <div className="card-image" style={{ backgroundImage: 'url(/news1.jpg)' }}>
-               <Card.Img variant="top" className="d-none" src="/news1.jpg" />
+               <div className="card-image" style={{ backgroundImage: 'url(/Industry-Insight-1.jpg)' }}>
+               <Card.Img variant="top" className="d-none" src="/Industry-Insight-1.jpg" />
             </div>
             <Card.Body>
-               <Card.Title>Lorem ipsum dolor sit amet, consect adipiscing elit</Card.Title>
+               <Card.Title>Lorem ipsum dolor sit amet, consect adipisc</Card.Title>
                <Card.Text>
                   Ut sit amet magna lobortis, volutpat erat eget, finibus mi. Vestibulum et molestie odio, a dapibus eros.
                </Card.Text>
@@ -22,7 +22,7 @@ return (
       </div>
       </Card>
    </div>
-   <div className="col-md-3">
+   <div className="col-md-4">
       <Card>
          <div className="comp news video text">
             <video controls autoplay>
@@ -37,7 +37,7 @@ return (
          </div>
       </Card>
    </div>
-   <div className="col-md-3">
+   <div className="col-md-4">
       <Card>
          <div className="comp news video text">
             <video controls autoplay>
