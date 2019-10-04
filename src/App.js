@@ -4,6 +4,7 @@ import CarouselComponent from './CarouselComponent';
 import CardComponent from './CardComponent';
 import SlickComponent from './SlickComponent';
 import './App.scss';
+import NewsComponent from './NewsComponent';
 
 export default class App extends React.Component {
   render() {
@@ -16,6 +17,7 @@ export default class App extends React.Component {
             <div className="col-md-10">
             <div className="col-md-1"></div>
         <div style={{ marginTop: "35px" }}>
+        <NewsComponent />
         <CardComponent />
         <SlickComponent />
         </div>
